@@ -9,7 +9,7 @@ using UnityEngine.AI;
 public class PlayerMovement : MonoBehaviour
 {
     AICharacterControl aiCharacterControl = null;
-    ThirdPersonCharacter thirdPersonCharacter = null;   // A reference to the ThirdPersonCharacter on the object
+   // ThirdPersonCharacter thirdPersonCharacter = null;   // A reference to the ThirdPersonCharacter on the object
     CameraRaycaster cameraRaycaster = null;
 
     [SerializeField]
@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         cameraRaycaster = Camera.main.GetComponent<CameraRaycaster>();
-        thirdPersonCharacter = GetComponent<ThirdPersonCharacter>();
+      //  thirdPersonCharacter = GetComponent<ThirdPersonCharacter>();
         aiCharacterControl = GetComponent<AICharacterControl>();
 
         currentDestination = transform.position;
